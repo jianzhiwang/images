@@ -1,0 +1,12 @@
+#(1)查看远程连接的方似
+git remote -v
+#origin	https://github.com/jianzhiwang/images.git (fetch)
+#origin	https://github.com/jianzhiwang/images.git (push)
+# 表明是https的连接方式，push不会保存用户名和密码-->临时让别人用！
+# 参考:https://blog.csdn.net/mr_javascript/article/details/83043174
+#(2)删除原先(Https)的连接方式
+git remote rm origin 
+# git remote -v --->此时删除了！
+#(3)ssh的方式
+git remote add origin git@github.com:xxx/images.git
+#(4)
